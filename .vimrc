@@ -1,5 +1,5 @@
 " This is the oh my vim directory
-let $OH_MY_VIM="/Users/franciscocallemoreno/.oh-my-vim"
+let $OH_MY_VIM="/Users/e045756/.oh-my-vim"
 let &runtimepath=substitute(&runtimepath, '^', $OH_MY_VIM.",", 'g')
 
 " Select the packages you need
