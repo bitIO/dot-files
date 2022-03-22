@@ -1,4 +1,8 @@
-# OSX aliases
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa --icons"
+    alias la="ls --long --all --group"
+fi
+
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias wget='wget --no-check-certificate'

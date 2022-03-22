@@ -1,13 +1,3 @@
-# DOCKER
-clearDockerLog() {
-  dockerLogFile=$(docker inspect $1 | grep -G '\"LogPath\": \"*\"' | sed -e 's/.*\"LogPath\": \"//g' | sed -e 's/\",//g')
-  rmCommand="rm $dockerLogFile"
-  screen -d -m -S dockerlogdelete ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
-  screen -S dockerlogdelete -p 0 -X stuff $"$rmCommand"
-  screen -S dockerlogdelete -p 0 -X stuff $'\n'
-  screen -S dockerlogdelete -X quit
-}
-
 clearDocker() {
   printf "🔥 🔥 🔥 \e[93m\nWARNING: This command will remove EVERY\n"
   printf "  * container\n"
@@ -28,9 +18,17 @@ clearDocker() {
   docker network rm $(docker network ls -q)
   docker volume rm $(docker volume ls -q)
 }
+clearDockerLog() {
+  dockerLogFile=$(docker inspect $1 | grep -G '\"LogPath\": \"*\"' | sed -e 's/.*\"LogPath\": \"//g' | sed -e 's/\",//g')
+  rmCommand="rm $dockerLogFile"
+  screen -d -m -S dockerlogdelete ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+  screen -S dockerlogdelete -p 0 -X stuff $"$rmCommand"
+  screen -S dockerlogdelete -p 0 -X stuff $'\n'
+  screen -S dockerlogdelete -X quit
+}
 
 printColors() {
-    for i in {0..255}; do 
-        print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; 
-    done
+  for i in {0..255}; do
+    print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'};
+  done
 }
