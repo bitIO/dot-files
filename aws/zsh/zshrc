@@ -21,3 +21,14 @@ set-aws-keys() {
   export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
   set +x
 }
+
+if [[ ! -d "$HOME/.oh-my-zsh/custom/completions" ]]; then
+  mkdir -p "$HOME/.oh-my-zsh/custom/completions"
+fi
+
+if [[ ! -f "$HOME/.oh-my-zsh/custom/completions/_set-aws-keys" ]]; then
+  ln -s $DOT_FILES_REPO/aws/zsh/completions/set-aws-keys $HOME/.oh-my-zsh/custom/completions/_set-aws-keys
+fi
+if [[ ! -f "$HOME/.oh-my-zsh/custom/completions/_set-aws-profile" ]]; then
+  ln -s $DOT_FILES_REPO/aws/zsh/completions/set-aws-profile $HOME/.oh-my-zsh/custom/completions/_set-aws-profile
+fi
