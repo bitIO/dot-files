@@ -1,3 +1,5 @@
+export AWS_PAGER=""
+
 aws-profiles() {
   cat ~/.aws/credentials | grep '\[' | grep -v '#' | tr -d '[' | tr -d ']'
 }
