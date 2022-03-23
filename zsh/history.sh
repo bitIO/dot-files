@@ -16,3 +16,37 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
+
+
+zshaddhistory() {
+    local line=${1%%$'\n'}
+    local cmd=${line%% *}
+    # Only those that satisfy all of the following conditions are added to the history
+    [[ ${#line} -ge 5
+       && ${cmd} != cd
+       && ${cmd} != code
+       && ${cmd} != file
+       && ${cmd} != ggpull
+       && ${cmd} != ggpush
+       && ${cmd} != glol
+       && ${cmd} != la
+       && ${cmd} != less
+       && ${cmd} != ll
+       && ${cmd} != ls
+       && ${cmd} != man
+       && ${cmd} != npm
+       && ${cmd} != open
+       && ${cmd} != ping
+       && ${cmd} != pwd
+       && ${cmd} != scp
+       && ${cmd} != subl
+       && ${cmd} != take
+       && ${cmd} != vi
+       && ${cmd} != vim
+       && ${cmd} != which
+       && ${cmd} != wich
+       && ${cmd} != yarn
+       && ${cmd} != z
+    ]]
+}
+zshaddhistory
