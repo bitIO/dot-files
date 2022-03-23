@@ -81,7 +81,7 @@ zstyle ':omz:update' frequency 13
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases aws common-aliases direnv encode64 git history-substring-search nvm zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(aliases aws common-aliases direnv encode64 git zsh-syntax-highlighting history-substring-search nvm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
