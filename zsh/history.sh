@@ -26,9 +26,12 @@ zshaddhistory() {
        && ${cmd} != cd
        && ${cmd} != code
        && ${cmd} != file
+       && ${cmd} != gaa
+       && ${cmd} != git
        && ${cmd} != ggpull
        && ${cmd} != ggpush
        && ${cmd} != glol
+       && ${cmd} != gst
        && ${cmd} != la
        && ${cmd} != less
        && ${cmd} != ll
