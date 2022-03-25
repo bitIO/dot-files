@@ -57,14 +57,14 @@
     nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
     nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
     nodeenv                 # node.js environment (https://github.com/ekalinin/nodeenv)
-    # node_version          # node.js version
-    # go_version            # go version (https://golang.org)
-    # rust_version          # rustc version (https://www.rust-lang.org)
-    # dotnet_version        # .NET version (https://dotnet.microsoft.com)
-    # php_version           # php version (https://www.php.net/)
-    # laravel_version       # laravel php framework version (https://laravel.com/)
-    # java_version          # java version (https://www.java.com/)
-    # package               # name@version from package.json (https://docs.npmjs.com/files/package.json)
+    #node_version           # node.js version
+    #go_version             # go version (https://golang.org)
+    #rust_version           # rustc version (https://www.rust-lang.org)
+    #dotnet_version         # .NET version (https://dotnet.microsoft.com)
+    #php_version            # php version (https://www.php.net/)
+    #laravel_version        # laravel php framework version (https://laravel.com/)
+    #java_version           # java version (https://www.java.com/)
+    #package                # name@version from package.json (https://docs.npmjs.com/files/package.json)
     #rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
     #rvm                     # ruby version from rvm (https://rvm.io)
     #fvm                     # flutter version management (https://github.com/leoafarias/fvm)
@@ -77,7 +77,7 @@
     #haskell_stack           # haskell version from stack (https://haskellstack.org/)
     kubecontext             # current kubernetes context (https://kubernetes.io/)
     #terraform               # terraform workspace (https://www.terraform.io)
-    # terraform_version     # terraform version (https://www.terraform.io)
+    #terraform_version      # terraform version (https://www.terraform.io)
     #azure                   # azure account name (https://docs.microsoft.com/en-us/cli/azure)
     #gcloud                  # google cloud cli account and project (https://cloud.google.com/)
     #google_app_cred         # google application credentials (https://cloud.google.com/docs/authentication/production)
@@ -90,7 +90,7 @@
     #vim_shell               # vim shell indicator (:sh)
     #midnight_commander      # midnight commander shell (https://midnight-commander.org/)
     #nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
-    # vpn_ip                # virtual private network indicator
+    vpn_ip                # virtual private network indicator
     # load                  # CPU load
     disk_usage            # disk usage
     # ram                   # free RAM
@@ -1296,7 +1296,7 @@
   #[ aws: aws profile (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) ]#
   # Show aws only when the command you are typing invokes one of these tools.
   # Tip: Remove the next line to always show aws.
-  typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|terragrunt'
+  typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|terragrunt|valeu'
 
   # POWERLEVEL9K_AWS_CLASSES is an array with even number of elements. The first element
   # in each pair defines a pattern against which the current AWS profile gets matched.
@@ -1466,7 +1466,7 @@
   typeset -g POWERLEVEL9K_VPN_IP_FOREGROUND=81
   # When on VPN, show just an icon without the IP address.
   # Tip: To display the private IP address when on VPN, remove the next line.
-  typeset -g POWERLEVEL9K_VPN_IP_CONTENT_EXPANSION=
+  # typeset -g POWERLEVEL9K_VPN_IP_CONTENT_EXPANSION=
   # Regular expression for the VPN network interface. Run `ifconfig` or `ip -4 a show` while on VPN
   # to see the name of the interface.
   typeset -g POWERLEVEL9K_VPN_IP_INTERFACE='(gpd|wg|(.*tun)|tailscale)[0-9]*'
