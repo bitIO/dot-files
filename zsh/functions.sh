@@ -1,4 +1,4 @@
-clearDocker() {
+dockerCleance() {
   printf "🔥 🔥 🔥 \e[93m\nWARNING: This command will remove EVERY\n"
   printf "  * container\n"
   printf "  * image\n"
@@ -18,7 +18,7 @@ clearDocker() {
   docker network rm $(docker network ls -q)
   docker volume rm $(docker volume ls -q)
 }
-clearDockerLog() {
+dockerLogsEmpty() {
   dockerLogFile=$(docker inspect $1 | grep -G '\"LogPath\": \"*\"' | sed -e 's/.*\"LogPath\": \"//g' | sed -e 's/\",//g')
   rmCommand="rm $dockerLogFile"
   screen -d -m -S dockerlogdelete ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
