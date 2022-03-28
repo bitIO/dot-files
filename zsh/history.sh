@@ -37,6 +37,7 @@ zshaddhistory() {
        && ${cmd} != ll
        && ${cmd} != ls
        && ${cmd} != man
+       && ${cmd} != mkdir
        && ${cmd} != npm
        && ${cmd} != open
        && ${cmd} != ping
@@ -46,6 +47,7 @@ zshaddhistory() {
        && ${cmd} != take
        && ${cmd} != vi
        && ${cmd} != vim
+       && ${cmd} != vscode
        && ${cmd} != which
        && ${cmd} != wich
        && ${cmd} != yarn
