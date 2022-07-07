@@ -38,6 +38,7 @@ zshaddhistory() {
        && ${cmd} != ls
        && ${cmd} != man
        && ${cmd} != mkdir
+       && ${cmd} != nodemon
        && ${cmd} != npm
        && ${cmd} != open
        && ${cmd} != ping
