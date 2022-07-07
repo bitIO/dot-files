@@ -1,6 +1,7 @@
 [core]
 	fileMode = false
 	excludesfile = /Users/franciscocallemoreno/.gitignore_global
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
