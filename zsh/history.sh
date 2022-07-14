@@ -42,6 +42,7 @@ zshaddhistory() {
        && ${cmd} != open
        && ${cmd} != ping
        && ${cmd} != pwd
+       && ${cmd} != pm2
        && ${cmd} != scp
        && ${cmd} != subl
        && ${cmd} != take
