@@ -23,11 +23,10 @@ zshaddhistory() {
     local cmd=${line%% *}
     # Only those that satisfy all of the following conditions are added to the history
     [[ ${#line} -ge 5
-       && ${cmd} != cd
+       && ${cmd} != alias
        && ${cmd} != code
-       && ${cmd} != file
        && ${cmd} != gaa
-       && ${cmd} != git
+       && ${cmd} != gco
        && ${cmd} != ggpull
        && ${cmd} != ggpush
        && ${cmd} != glol
@@ -39,20 +38,13 @@ zshaddhistory() {
        && ${cmd} != man
        && ${cmd} != mkdir
        && ${cmd} != nodemon
-       && ${cmd} != npm
        && ${cmd} != open
-       && ${cmd} != ping
-       && ${cmd} != pwd
        && ${cmd} != pm2
-       && ${cmd} != scp
+       && ${cmd} != pwd
        && ${cmd} != subl
        && ${cmd} != take
-       && ${cmd} != vi
-       && ${cmd} != vim
        && ${cmd} != vscode
        && ${cmd} != which
-       && ${cmd} != wich
-       && ${cmd} != yarn
        && ${cmd} != z
     ]]
 }
