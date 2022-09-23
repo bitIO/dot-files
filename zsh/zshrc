@@ -90,6 +90,7 @@ plugins=(
   nvm
   urltools
   zsh-autosuggestions
+  zsh-safe-rm
 )
 
 source $ZSH/oh-my-zsh.sh
