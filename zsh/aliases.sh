@@ -11,5 +11,3 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias resetSpotlight='sudo mdutil -a -i off;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;sudo mdutil -a -i on'
 
 alias wget='wget --no-check-certificate'
-
-alias vscode="code --user-data-dir ~/Dev/vscode/valassis/data --extensions-dir ~/Dev/vscode/valassis/extensions"
