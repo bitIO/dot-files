@@ -43,7 +43,6 @@ zshaddhistory() {
        && ${cmd} != pwd
        && ${cmd} != subl
        && ${cmd} != take
-       && ${cmd} != vscode
        && ${cmd} != which
        && ${cmd} != z
     ]]
