@@ -1,4 +1,5 @@
 source $DOT_FILES_REPO/zsh/aliases.sh
+source $DOT_FILES_REPO/zsh/direnv.sh
 source $DOT_FILES_REPO/zsh/functions.sh
 source $DOT_FILES_REPO/zsh/keybindings.sh
 source $DOT_FILES_REPO/zsh/history.sh
