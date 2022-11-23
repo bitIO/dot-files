@@ -1,9 +1,16 @@
-source $DOT_FILES_REPO/zsh/aliases.sh
+source $DOT_FILES_REPO/zsh/exa.sh
 source $DOT_FILES_REPO/zsh/direnv.sh
-source $DOT_FILES_REPO/zsh/functions.sh
-source $DOT_FILES_REPO/zsh/keybindings.sh
-source $DOT_FILES_REPO/zsh/history.sh
+source $DOT_FILES_REPO/zsh/glow.sh
+source $DOT_FILES_REPO/zsh/nvm.sh
+source $DOT_FILES_REPO/zsh/saferm.sh
 
+source $DOT_FILES_REPO/zsh/aliases.sh
+source $DOT_FILES_REPO/zsh/functions.sh
+source $DOT_FILES_REPO/zsh/history.sh
+source $DOT_FILES_REPO/zsh/keybindings.sh
+
+source $DOT_FILES_REPO/aws/zshrc
+source $DOT_FILES_REPO/ssh/zshrc
 source $DOT_FILES_REPO/vim/zshrc
 
 . $DOT_FILES_REPO/zsh/z.sh
