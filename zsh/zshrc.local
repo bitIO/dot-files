@@ -4,8 +4,7 @@ source $DOT_FILES_REPO/zsh/functions.sh
 source $DOT_FILES_REPO/zsh/keybindings.sh
 source $DOT_FILES_REPO/zsh/history.sh
 
-source $DOT_FILES_REPO/aws/zsh/zshrc
-source $DOT_FILES_REPO/ssh/zsh/zshrc
+source $DOT_FILES_REPO/vim/zshrc
 
 . $DOT_FILES_REPO/zsh/z.sh
 
