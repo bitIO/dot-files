@@ -90,6 +90,7 @@ plugins=(
   nvm
   urltools
   zsh-autosuggestions
+  zsh-aws-vault
   zsh-safe-rm
 )
 
