@@ -1,3 +1,4 @@
+source $DOT_FILES_REPO/zsh/bin.sh
 source $DOT_FILES_REPO/zsh/exa.sh
 source $DOT_FILES_REPO/zsh/direnv.sh
 source $DOT_FILES_REPO/zsh/glow.sh
