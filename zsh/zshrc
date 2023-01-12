@@ -85,13 +85,14 @@ plugins=(
   direnv
   encode64
   git
-  zsh-syntax-highlighting
+  git-flow
   history-substring-search
   nvm
   urltools
   zsh-autosuggestions
   zsh-aws-vault
   zsh-safe-rm
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
