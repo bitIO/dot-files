@@ -1,19 +1,28 @@
-if [ -z "$(command -v yarn)" ]; then
-  echo "🔥 [NODE] yarn not installed"
-fi
-
-if [ -z "$(command -v ncu)" ]; then
-  echo "🔥 [NODE] node-check-updates not installed"
-  echo "ℹ️  npm install -g npm-check-updates"
-fi
-
-if [ -z "$(command -v http-server)" ]; then
-  echo "🔥 [NODE] http-server not installed"
-  echo "ℹ️  npm install --global http-server"
-fi
-
-if [ -z "$(command -v ntl)" ]; then
-  echo "🔥 [NODE] ntl not installed"
+if [ ! -x "$(command -v npm)" ]; then
+  echo "npm not found. Install nvm first"
 else
+  INSTALLED_PACKAGES=$(npm list -g --depth=0 -p | awk '{print $1}')
+
+  # array of packages to check
+  PACKAGES_TO_CHECK=(
+    "depcheck"
+    "http-server"
+    "npm-check-updates"
+    "npkill"
+    "ntl"
+    "yarn"
+    "zx"
+  )
+
+
+  for PACKAGE in $PACKAGES_TO_CHECK; do
+    if [[ ! $INSTALLED_PACKAGES =~ $PACKAGE ]]; then
+      # echo print in red
+      echo "🔥 [NPM] $PACKAGE not found. Install with npm: \033[0;31m npm install -g $PACKAGE\033[0m"
+    fi
+  done
+fi
+
+if [ "$(command -v ntl)" ]; then
   export NTL_RUNNER=yarn
 fi
