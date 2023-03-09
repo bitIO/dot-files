@@ -84,6 +84,7 @@ plugins=(
   common-aliases
   direnv
   encode64
+  fzf
   git
   git-flow
   history-substring-search
