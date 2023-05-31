@@ -17,11 +17,11 @@ source $DOT_FILES_REPO/zsh/keybindings.sh
 source $DOT_FILES_REPO/ssh/zshrc
 source $DOT_FILES_REPO/vim/zshrc
 
+source $DOT_FILES_REPO/zsh/path.sh
+
 . $DOT_FILES_REPO/zsh/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
