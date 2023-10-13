@@ -1,26 +1,3 @@
-"Specify a directory for plugins"
-call plug#begin('~/.config/nvim/plugged')
-
-
-Plug 'joshdick/onedark.vim' "Neovim theme"
-Plug 'itchyny/lightline.vim' "Lightline statusbar vim"
-Plug 'sheerun/vim-polyglot' "Multiple language support"
-Plug 'airblade/vim-gitgutter' "Git status gutter"
-Plug 'lukas-reineke/indent-blankline.nvim' "Blank line indent"
-Plug 'andymass/vim-matchup' " matching parens and more
-Plug 'w0rp/ale' " linter
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
-Plug 'bronson/vim-trailing-whitespace' " highlight trailing spaces
-Plug 'nvim-tree/nvim-web-devicons' " Tab manager
-Plug 'romgrk/barbar.nvim' " Tab manager
-Plug 'preservim/nerdtree' "Tree explorer"
-Plug 'ryanoasis/vim-devicons' "Dev icons for nerdtree"
-Plug 'preservim/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin' "Git status for nerdtree"
-
-"Initialize plugin system"
-call plug#end()
-
-
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
@@ -73,5 +50,3 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \}
 let g:ale_fix_on_save = 1
-
-lua require('settings')

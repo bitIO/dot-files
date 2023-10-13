@@ -130,4 +130,4 @@ fi
 export DOT_FILES_REPO="$HOME/Dev/dot-files"
 source $DOT_FILES_REPO/zsh/zshrc.local
 
-source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

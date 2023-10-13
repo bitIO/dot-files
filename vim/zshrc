@@ -1,4 +1,5 @@
 # @see https://dev.to/louisbertin/macos-series-how-to-enhance-your-vim-editor-488k
+# @see https://www.lazyvim.org/
 if [ -x "$(command -v nvim)" ]; then
     alias vim='/opt/homebrew/bin/nvim'
     alias vi='vim'
@@ -8,20 +9,8 @@ else
     echo "Neovim not installed (brew install neovim)"
 fi
 
-if [ ! -d $HOME/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
-  git clone --depth 1 https://github.com/wbthomason/packer.nvim \
-    $HOME/.local/share/nvim/site/pack/packer/start/packer.nvim
+if [ ! -d $HOME/.config/nvim ]; then
+  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  rm -rf ~/.config/nvim/.git
 fi
 
-if [ ! -f $HOME/.config/nvim/init.vim ]; then
-  ln -s $DOT_FILES_REPO/vim/init.vim $HOME/.config/nvim/init.vim
-fi
-
-if [ ! -d $HOME/.config/nvim/lua ]; then
-  ln -s $DOT_FILES_REPO/vim/lua $HOME/.config/nvim/lua
-fi
-
-# if [ ! -f $HOME/.config/nvim/init.lua ]; then
-#   ln -s $DOT_FILES_REPO/vim/lua $HOME/.config/nvim/lua
-#   ln -s $DOT_FILES_REPO/vim/init.lua $HOME/.config/nvim/init.lua
-# fi

@@ -1,9 +1,10 @@
 #!/usr/bin/env zx
 
-import {$, echo} form 'zx';
+import { $, echo } from form;
+'zx';
 
 echo("Installing nvm ...");
-await $`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash``
+await $`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
 echo("Installing global packages ...");
 await $`npm install -g npm-check-updates ntl`
