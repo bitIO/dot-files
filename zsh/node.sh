@@ -25,4 +25,5 @@ fi
 
 if [ "$(command -v ntl)" ]; then
   export NTL_RUNNER=yarn
+  alias ntl="ntl -A"
 fi
