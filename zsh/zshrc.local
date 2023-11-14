@@ -19,6 +19,8 @@ source $DOT_FILES_REPO/vim/zshrc
 
 source $DOT_FILES_REPO/zsh/path.sh
 
+source $DOT_FILES_REPO/zsh/podman.sh
+
 . $DOT_FILES_REPO/zsh/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
