@@ -8,6 +8,7 @@ source $DOT_FILES_REPO/zsh/lazydocker.sh
 source $DOT_FILES_REPO/zsh/nvm.sh
 source $DOT_FILES_REPO/zsh/node.sh
 source $DOT_FILES_REPO/zsh/saferm.sh
+source $DOT_FILES_REPO/zsh/bat.sh
 
 source $DOT_FILES_REPO/zsh/aliases.sh
 source $DOT_FILES_REPO/zsh/functions.sh
