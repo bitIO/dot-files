@@ -27,3 +27,7 @@ if [ "$(command -v ntl)" ]; then
   export NTL_RUNNER=yarn
   alias ntl="ntl -A"
 fi
+
+if [ "$(command -v ncu)" ]; then
+  alias ncu="ncu --interactive --format group"
+fi
