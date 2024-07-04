@@ -91,6 +91,7 @@ plugins=(
   git-flow
   history-substring-search
   pip
+  poetry
   python
   nvm
   urltools
