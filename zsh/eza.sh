@@ -1,5 +1,5 @@
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa --icons"
+if [ -x "$(command -v eza)" ]; then
+    alias ls="eza --icons"
     alias la="ls --long --all --group"
 else
     echo "Exa not installed (brew install exa)"
