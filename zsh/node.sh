@@ -10,7 +10,6 @@ else
     "npm-check-updates"
     "npkill"
     "ntl"
-    "yarn"
     "zx"
   )
 
@@ -24,10 +23,14 @@ else
 fi
 
 if [ "$(command -v ntl)" ]; then
-  export NTL_RUNNER=yarn
+  if [ "$(command -v yarn)" ]; then
+    export NTL_RUNNER=yarn
+  fi
   alias ntl="ntl -A"
 fi
 
 if [ "$(command -v ncu)" ]; then
   alias ncu="ncu --interactive --format group"
 fi
+
+export COREPACK_ENABLE_AUTO_PIN=0
