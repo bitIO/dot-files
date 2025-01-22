@@ -1,9 +1,12 @@
 source $DOT_FILES_REPO/zsh/bin.sh
+
 source $DOT_FILES_REPO/zsh/aws.sh
+source $DOT_FILES_REPO/zsh/btop.sh
 source $DOT_FILES_REPO/zsh/eza.sh
 source $DOT_FILES_REPO/zsh/direnv.sh
 source $DOT_FILES_REPO/zsh/fzf.sh
 source $DOT_FILES_REPO/zsh/glow.sh
+source $DOT_FILES_REPO/zsh/kondo.sh
 source $DOT_FILES_REPO/zsh/lazydocker.sh
 source $DOT_FILES_REPO/zsh/nvm.sh
 source $DOT_FILES_REPO/zsh/node.sh
