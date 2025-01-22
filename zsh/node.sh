@@ -5,12 +5,9 @@ else
 
   # array of packages to check
   PACKAGES_TO_CHECK=(
-    "depcheck"
     "http-server"
     "npm-check-updates"
-    "npkill"
     "ntl"
-    "zx"
   )
 
 
