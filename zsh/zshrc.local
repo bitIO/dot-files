@@ -1,3 +1,5 @@
+source $DOT_FILES_REPO/zsh/zinit.sh
+
 source $DOT_FILES_REPO/zsh/bin.sh
 
 source $DOT_FILES_REPO/zsh/aws.sh

@@ -4,4 +4,7 @@ if [ ! -x "$(command -v fzf)" ]; then
 elif [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
   autoload -U compinit && compinit
-fi 
+  zinit light Aloxaf/fzf-tab # fzf tab completion
+  zstyle ':completion:*' menu no
+  zstyle 'fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
+fi

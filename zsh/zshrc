@@ -93,7 +93,7 @@ plugins=(
   python
   nvm
   urltools
-  # zsh-autosuggestions
+  zsh-autosuggestions
   zsh-aws-vault
   zsh-safe-rm
   zsh-syntax-highlighting
@@ -132,8 +132,4 @@ fi
 
 export DOT_FILES_REPO="$HOME/Dev/dot-files"
 source $DOT_FILES_REPO/zsh/zshrc.local
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# https://github.com/romkatv/powerlevel10k/issues/1554#issuecomment-1701598955
-# unset ZSH_AUTOSUGGEST_USE_ASYNC
+ 
