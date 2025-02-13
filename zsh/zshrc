@@ -95,7 +95,6 @@ plugins=(
   urltools
   zoxide
   zsh-autosuggestions
-  zsh-aws-vault
   zsh-safe-rm
   zsh-syntax-highlighting
 )
