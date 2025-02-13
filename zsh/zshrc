@@ -93,6 +93,7 @@ plugins=(
   python
   nvm
   urltools
+  zoxide
   zsh-autosuggestions
   zsh-aws-vault
   zsh-safe-rm
@@ -132,4 +133,3 @@ fi
 
 export DOT_FILES_REPO="$HOME/Dev/dot-files"
 source $DOT_FILES_REPO/zsh/zshrc.local
- 

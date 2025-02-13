@@ -14,6 +14,7 @@ source $DOT_FILES_REPO/zsh/nvm.sh
 source $DOT_FILES_REPO/zsh/node.sh
 source $DOT_FILES_REPO/zsh/saferm.sh
 source $DOT_FILES_REPO/zsh/bat.sh
+source $DOT_FILES_REPO/zsh/zoxide.sh
 
 source $DOT_FILES_REPO/zsh/aliases.sh
 source $DOT_FILES_REPO/zsh/functions.sh
@@ -25,14 +26,10 @@ source $DOT_FILES_REPO/vim/zshrc
 
 source $DOT_FILES_REPO/zsh/path.sh
 
-source $DOT_FILES_REPO/zsh/podman.sh
+source $DOT_FILES_REPO/zsh/zstyle.sh
 
-. $DOT_FILES_REPO/zsh/z.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# load makefiles available targets with tab
-# https://unix.stackexchange.com/questions/499317/prevent-completion-of-files-for-make-command-in-zsh-shell
-zstyle ':completion:*:*:make:*' tag-order 'targets'

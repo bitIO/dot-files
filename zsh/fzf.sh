@@ -5,6 +5,4 @@ elif [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
   autoload -U compinit && compinit
   zinit light Aloxaf/fzf-tab # fzf tab completion
-  zstyle ':completion:*' menu no
-  zstyle 'fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
 fi
