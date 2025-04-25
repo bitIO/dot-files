@@ -6,8 +6,16 @@ ServerAliveInterval 240
 Host github.com
     HostName github.com
     User git
-    IdentityFile ~/.ssh/id_rsa_bitio
+    IdentityFile ~/.ssh/id_rsa_personal
 Host bitbucket.org
     HostName bitbucket.org
     user git
-    IdentityFile ~/.ssh/id_rsa_bitio
+    IdentityFile ~/.ssh/id_rsa_personal
+Host git.epam.com
+    HostName git.epam.com
+    user git
+    IdentityFile ~/.ssh/id_epam
+Host eu.git.epam.com
+    HostName eu.git.epam.com
+    user git
+    IdentityFile ~/.ssh/id_epam
