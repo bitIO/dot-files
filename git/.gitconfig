@@ -1,6 +1,6 @@
 [core]
 	fileMode = false
-	excludesfile = /Users/franciscocallemoreno/.gitignore_global
+	excludesfile = /Users/Francisco_Calle/.gitignore_global
 	editor = vim
 [alias]
   lol = log --graph --decorate --abbrev-commit --all --pretty=format:'%C(auto)%h%d%Creset %s %Cgreen%ad%Creset by %Cblue%cn%Creset' --date=relative
