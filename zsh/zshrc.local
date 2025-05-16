@@ -29,6 +29,7 @@ source $DOT_FILES_REPO/zsh/path.sh
 source $DOT_FILES_REPO/zsh/zstyle.sh
 
 source $DOT_FILES_REPO/zsh/gpg.sh
+source $DOT_FILES_REPO/zsh/editors.sh
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
