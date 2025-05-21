@@ -130,5 +130,5 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export DOT_FILES_REPO="$HOME/Dev/dot-files"
+export DOT_FILES_REPO="$HOME/Dev/bitio/dot-files"
 source $DOT_FILES_REPO/zsh/zshrc.local
