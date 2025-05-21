@@ -9,4 +9,4 @@ fpath=(${ASDF_DIR}/completions $fpath)
 source ${ASDF_DIR}/plugins/ivm-java/util/ivm_environment_manager.sh
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd ivm_setup_environment
-export IVM_ENV_MANAGER_LOG=1
+# export IVM_ENV_MANAGER_LOG=1
